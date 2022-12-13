@@ -14,15 +14,16 @@
         "bo"
         "fo"
     ;
+    background-image: url(../img/background/resturang-bakgrund.jpg);
+    background-size: cover;
 }
 
 #background{
  
     background: url(..//img/background/background.jpg) no-repeat center fixed;
     background-size: cover;
-    grid-area: "bo";
-    background-color: antiquewhite;
-    background-position: center center;
+    grid-area: bo;
+    background-position: center bottom;
 }
 
 #main-page{
@@ -43,7 +44,7 @@
 
 header{
     background-color: rgb(255, 245, 225);
-    grid-area: "he";
+    grid-area: he;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -62,7 +63,7 @@ a{
 }
 
 a:hover{
-    opacity: 100%;
+    opacity: 90%;
     color: rgb(0,133,102);
 }
 
@@ -71,12 +72,25 @@ a:hover{
     height: 1fr;
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(2, 500px);
-    gap: 50px;
+    row-gap: 50px;
+    column-gap: 100px;
+
 }
 
 .mat{
-    background-color: aquamarine;
+    background-color: rgb(255, 245, 225);
+    border-style: solid;
     padding: 10px;
+}
+
+p{
+    text-align: justify;
+    padding: 5px;
+}
+
+.mat-bild{
+    height: 250px;
+    padding: 13px;
 }
 
 #flex-parent-resturant{
@@ -87,7 +101,38 @@ a:hover{
     margin-bottom: 50px;
 }
 
-footer{
-    grid-area: "fo";
-    background-color: aqua;
+.matrubrik{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.footer-gridwrapper{
+    grid-area: fo;
+    background-color: rgb(255, 245, 225);
+    border-top: 3px solid black;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+      "in co op lo"  
+      "textin textco textop lo"
+    ;
+}
+
+#information{
+    grid-area: in;
+
+
+}
+
+#kontakt-uppgifter{
+grid-area: co;
+
+}
+
+#öppettider{
+grid-area: op;
+
 }
