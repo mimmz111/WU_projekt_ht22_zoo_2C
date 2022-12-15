@@ -19,11 +19,25 @@
 }
 
 #background{
- 
-    background: url(..//img/background/background.jpg) no-repeat center fixed;
     background-size: cover;
     grid-area: bo;
     background-position: center bottom;
+    background-image: url(../img/background/bakgrund-2.jpg);
+    height: 100vh;
+    
+    display: flex;
+    justify-content: end;
+    padding: 50px;
+}
+
+#text-square{
+    display: flex;
+    height: 100px;
+    width: 400px;
+    background-color: rgb(255, 245, 225);
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
 }
 
 #main-page{
@@ -154,6 +168,7 @@ grid-area: op;
 
 #logga-plats{
     display: flex;
+    align-items: center;
 }
 
 #logga-plats img{
