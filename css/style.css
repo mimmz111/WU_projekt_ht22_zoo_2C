@@ -177,3 +177,75 @@ grid-area: op;
     justify-content: center;
     align-items: center;
 }
+
+#grid-wrapper-animal-page{
+    display: grid;
+    height: 150vh;
+    background-image: url(../img/background/background-animals.jpg);
+    background-size: cover;
+
+    
+    grid-template-columns: 1.75fr 1.2fr 1fr;
+    grid-template-rows: 1fr 1.2fr 0.75fr;
+    grid-template-areas: 
+    "pi pi te"
+    "te2 pi2 pi3"
+    "te4 te4 pi3"
+    ;
+}
+
+#monkey-picture{
+    grid-area: pi;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#monkey-picture img{
+    height: 300px;
+    padding-left: 50px;
+}
+
+#monkey-text{
+    grid-area: te;
+}
+
+#hippo-text{
+    grid-area: te2;
+}
+
+#hippo-picture{
+    grid-area: pi2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hippo-picture img{
+    height: 274px;
+}
+
+
+
+#giraff-picture{
+    grid-area: pi3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#giraff-picture img{
+    height: 500px;
+}
+
+#giraff-text{
+    grid-area: te4;
+}
+
+.animal-headlines{
+    text-decoration: underline;
+}
+
+.animal-text{
+    padding: 20px;
+}
