@@ -49,7 +49,7 @@
 }
 
 #resturant-page{
-    text-decoration: underline;
+    text-decoration-line: underline;
 }
 
 #information-page{
@@ -66,11 +66,6 @@ header{
     height: 77px;
 }
 
-body{
-    height: 100vh;
-    grid-area: bo;
-}
-
 a{
     color: black;
     text-decoration: none;
@@ -81,17 +76,16 @@ a:hover{
     color: rgb(0,133,102);
 }
 
-#meny{
+#menu{
     display: grid;
     height: 1fr;
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(2, 500px);
     row-gap: 50px;
     column-gap: 100px;
-
 }
 
-.mat{
+.food{
     background-color: rgb(255, 245, 225);
     border-style: solid;
     padding: 10px;
@@ -102,7 +96,7 @@ p{
     padding: 5px;
 }
 
-.mat-bild{
+.food-picture{
     height: 250px;
     padding: 13px;
 }
@@ -115,7 +109,7 @@ p{
     margin-bottom: 50px;
 }
 
-.matrubrik{
+.food-headline{
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
@@ -142,15 +136,15 @@ p{
     grid-area: in;
 }
 
-#kontakt-uppgifter{
+#contact-details{
 grid-area: co;
 }
 
-#öppettider{
+#openhours{
 grid-area: op;
 }
 
-#logga-plats{
+#logo-place{
     grid-area: lo;
 }
 
@@ -158,20 +152,20 @@ grid-area: op;
     grid-area: textin;
 }
 
-#kontaktuppgifter-text{
+#contact-details-text{
     grid-area: textco;
 }
 
-#öppettider-text{
+#openhours-text{
     grid-area: textop;
 }
 
-#logga-plats{
+#logo-place{
     display: flex;
     align-items: center;
 }
 
-#logga-plats img{
+#logo-place img{
     grid-area: lo;
     height: 60px;
     justify-content: center;
@@ -203,15 +197,21 @@ grid-area: op;
 
 #monkey-picture img{
     height: 300px;
-    padding-left: 50px;
+    margin: 50px;
 }
 
 #monkey-text{
     grid-area: te;
+    height: 260px;
+    margin-top: 50px;
+    margin-right: 50px;
 }
 
 #hippo-text{
     grid-area: te2;
+    margin: 50px;
+    height: 295px;
+    margin-top: 50px;
 }
 
 #hippo-picture{
@@ -222,10 +222,8 @@ grid-area: op;
 }
 
 #hippo-picture img{
-    height: 274px;
+    width: auto;
 }
-
-
 
 #giraff-picture{
     grid-area: pi3;
@@ -235,17 +233,43 @@ grid-area: op;
 }
 
 #giraff-picture img{
-    height: 500px;
+    height: 637px;
+    margin-bottom: 10px;
 }
 
 #giraff-text{
     grid-area: te4;
+    margin-left: 50px;
+    margin-bottom: 65px;
+}
+
+.giraffe-text-gridwrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "teg1 teg2"
+    ;
+}
+
+#first-giraffe-text{
+    grid-area: teg1;
+    margin-right:15px;
+}
+
+#second-giraffe-text{
+    grid-area: teg2;
+    margin-left: 15px;
 }
 
 .animal-headlines{
     text-decoration: underline;
+    padding: 10px;
+    padding-bottom: 15px;
 }
 
 .animal-text{
     padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 245, 225, 0.5);
 }
